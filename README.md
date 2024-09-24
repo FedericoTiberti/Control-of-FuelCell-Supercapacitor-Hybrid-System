@@ -10,8 +10,9 @@ The control strategy is based on the approach presented in the paper [[1]](#1), 
 2. **Boost-Buck Converter**: Connects the supercapacitor (SC) to the same DC bus.
 
 Both converters supply power to the traction motor through a shared DC bus, which in turn connects to the motor via an inverter.  
-
+<p align="center">
 <img src="images/HESS_circuit.png" align="centre" width="300"/>  
+</p>
 The nonlinear controller used in this system ensures optimal performance by meeting the following key objectives:
 
 ### Controller Objectives
@@ -33,9 +34,10 @@ The supercapacitor acts as an auxiliary power source that handles transient powe
 
 ### 4. DC Bus & Traction Motor
 Both converters feed into a common DC bus that supplies power to the electric vehicle's **traction motor** via an inverter. The tight regulation of the DC bus voltage is critical for ensuring smooth operation of the motor.  
+<p align="center">
+<img src="images/Power_circuit.png" align="centre" width="400"/> 
+</p>
 
-<img src="images/Power_circuit.png" align="centre" width="300"/> 
- 
 ## Simulation Goals
 
 This repository provides the simulation of the nonlinear control strategy designed to meet the following performance goals:
