@@ -9,7 +9,10 @@ The control strategy is based on the approach presented in the paper [[1]](#1), 
 1. **Boost Converter**: Connects the fuel cell (FC) to the DC bus.
 2. **Boost-Buck Converter**: Connects the supercapacitor (SC) to the same DC bus.
 
-Both converters supply power to the traction motor through a shared DC bus, which in turn connects to the motor via an inverter. The nonlinear controller used in this system ensures optimal performance by meeting the following key objectives:
+Both converters supply power to the traction motor through a shared DC bus, which in turn connects to the motor via an inverter.  
+
+<img src="images/HESS_circuit.png" align="centre" width="300"/>  
+The nonlinear controller used in this system ensures optimal performance by meeting the following key objectives:
 
 ### Controller Objectives
 1. **Tight DC Bus Voltage Regulation**: The DC bus voltage must remain stable despite variations in load demand.
@@ -29,8 +32,10 @@ The supercapacitor acts as an auxiliary power source that handles transient powe
 - **Boost-Buck Converter (SC)**: Connects the supercapacitor to the DC bus, enabling bidirectional power flow for both charging and discharging.
 
 ### 4. DC Bus & Traction Motor
-Both converters feed into a common DC bus that supplies power to the electric vehicle's **traction motor** via an inverter. The tight regulation of the DC bus voltage is critical for ensuring smooth operation of the motor.
+Both converters feed into a common DC bus that supplies power to the electric vehicle's **traction motor** via an inverter. The tight regulation of the DC bus voltage is critical for ensuring smooth operation of the motor.  
 
+<img src="images/Power_circuit.png" align="centre" width="300"/> 
+ 
 ## Simulation Goals
 
 This repository provides the simulation of the nonlinear control strategy designed to meet the following performance goals:
@@ -48,7 +53,7 @@ To run the simulation, you will need MATLAB/Simulink (recommended version: R2021
    ```bash
    git clone https://github.com/yourusername/Control-of-FuelCell-Supercapacitor-Hybrid-System.git
 2. Open MATLAB and navigate to this project folder.
-3.  Run the main_simulation.slx to launch the simulation and observe the control performance.
+3.  Run the [main simulation](main_simulation.slx) to launch the simulation and observe the control performance.
 
 ## References
 <a id="1">[1]</a> 
